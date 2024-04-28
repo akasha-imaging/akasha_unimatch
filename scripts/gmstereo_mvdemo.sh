@@ -2,8 +2,8 @@
 
 
 # gmstereo-scale2-regrefine3 model
-CUDA_VISIBLE_DEVICES=0 python main_stereo.py \
---inference_dir demo/stereo-intrinsic/s1_left_P0-s1_right_P0 \
+CUDA_VISIBLE_DEVICES=0 python run_mvunimatch.py \
+--inference_dir demo/stereo-intrinsic \
 --inference_size 1024 1920 \
 --output_path output/gmstereo-scale2-regrefine3-intrinsic \
 --resume pretrained/gmstereo-scale2-regrefine3-resumeflowthings-mixdata-train320x640-ft640x960-e4e291fd.pth \

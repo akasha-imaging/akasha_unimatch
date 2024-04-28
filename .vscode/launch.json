@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["--inference_dir", "demo/stereo-intrinsic", "--inference_size", "1024", "1920", "--output_path", "output/gmstereo-scale2-regrefine3-intrinsic", "--resume", "pretrained/gmstereo-scale2-regrefine3-resumeflowthings-mixdata-train320x640-ft640x960-e4e291fd.pth", "--padding_factor", "32", "--upsample_factor", "4", "--num_scales", "2", "--attn_type", "self_swin2d_cross_swin1d", "--attn_splits_list", "2", "8", "--corr_radius_list", "-1", "4", "--prop_radius_list", "-1", "1", "--reg_refine", "--num_reg_refine", "3"],
+            "purpose": ["debug-in-terminal"]
+        }
+    ]
+}
